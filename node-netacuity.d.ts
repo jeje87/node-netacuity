@@ -2,12 +2,8 @@ declare module 'node-netacuity' {
     export class NetAcuity {
         constructor(config: Config)
         public generateEdgeMessage(ip: string, transactionId: string): Buffer;
-        public get(ip: string, callback: Callback): void;
+        public get(ip: string, callback: (error: any, result: EdgeRecord) => void): void;
         public close(callback: Function): void;
-    }
-
-    interface Callback {
-        (error: any, result: EdgeRecord): void;
     }
 
     export interface EdgeRecord {
