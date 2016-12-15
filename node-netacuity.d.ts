@@ -60,7 +60,7 @@ declare module 'node-netacuity' {
         servers: Array<Server>;
         appId?: number;
         failoverWindow?: number;
-        failoverThreshold?: 3;
+        failoverThreshold?: number;
         dns?: DNS;
         cache?: Cache;
     }
