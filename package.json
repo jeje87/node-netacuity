@@ -26,5 +26,6 @@
     "jshint-stylish": "~1.0.1",
     "mocha": "~2.2.1",
     "chai": "~2.1.1"
-  }
+  },
+  "typings": "node-netacuity.d.ts"
 }
